@@ -1,0 +1,311 @@
+@import "compass";
+
+/*@font-face {
+	font-family: 'WolfShowsFont';
+	src: url('fonts/wolf-shows-font.eot');
+	src: url('fonts/wolf-shows-font.eot?#iefix') format('rembedded-opentype'),
+		url('fonts/wolf-shows-font.svg#wolf-shows-font') format('svg'),
+		url('fonts/wolf-shows-font.woff') format('woff'),
+		url('fonts/wolf-shows-font.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}*/
+
+@include font-face( 'WolfShowsFont', 
+	font-files( "wolf-shows-font.eot?#iefix","wolf-shows-font.svg#wolf-shows-font","wolf-shows-font.woff","wolf-shows-font.ttf"
+	 ),
+	"wolf-shows-font.eot",
+	'normal',
+	'normal'
+
+);
+
+.wolf-show-icons .wolf-show-facebook:before,
+.wolf-show-icons .wolf-show-flyer:before,
+.wolf-show-linked .wolf-show-entry-link:before
+{
+	font-family: 'WolfShowsFont';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.wolf-show-icons .wolf-show-facebook:before {
+	content: "\e600";
+	color: #3b5997;
+}
+/*.icon-google-plus:before {
+	content: "\e601";
+}
+.icon-google:before {
+	content: "\e602";
+}*/
+
+.wolf-show-icons .wolf-show-flyer:before {
+	content: "\e603";
+}
+
+.wolf-show-linked .wolf-show-entry-link:before {
+	margin-right: 8px;
+	content: "\e00c";
+}
+
+/* Table
+------------------------------------------*/
+
+.wolf-tour-dates table{
+	margin-bottom: 4rem;
+	width: 100%;
+	border:none;
+
+	a{
+		text-decoration: none;
+	}
+}
+
+.wolf-tour-dates table tr td{
+	vertical-align: middle;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	text-align: left;
+	border-left: none;
+	border-right: none;
+}
+
+.wolf-show-cancelled{
+
+	.wolf-show-entry-link, .wolf-show-venue, .wolf-show-image:before{
+		text-decoration: line-through;
+	}
+
+	&.cancelled{
+		text-decoration:none!important;
+	}
+}
+
+.wolf-show-action{
+	text-align: right!important;
+}
+
+.wolf-show-date{
+	width: 80px;
+}
+
+.wolf-custom-show-date .wolf-show-day,
+.wolf-custom-show-date .wolf-show-month,
+.wolf-custom-show-date .wolf-show-year{
+	display:block;
+	width:50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:700;
+	text-align: left;
+}
+
+.wolf-custom-show-date .wolf-show-day{
+	font-size:28px;
+	line-height: 27px;
+}
+
+.wolf-custom-show-date .wolf-show-month{
+	font-size:18px;
+	line-height: 20px;
+}
+
+.wolf-custom-show-date .wolf-show-year{
+	font-size:14px;
+	line-height: 16px;
+}
+
+.wolf-show-icons .wolf-show-flyer,
+.wolf-show-icons .wolf-show-facebook{
+	display: inline-block;
+	margin: 0 3px;
+	width: 16px;
+	height: 16px;
+}
+
+
+.wolf-show-actions{
+	margin-top: 0.5rem;
+	zoom: 1;
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+}
+
+.wolf-show-label{
+	width: 100%;
+	display: block;
+	zoom: 1;
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+
+	&.cancelled{
+		text-decoration:none!important;
+		font-style: normal!important;
+		color: grey;
+	}
+
+	&.sold-out{
+		color: red;
+	}
+
+}
+
+/* Single Show
+------------------------------------------*/
+.single-show article.wolf-show{
+	zoom: 1;
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+
+	//max-width: 960px;
+	margin-top: 0!important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#wolf-single-show{
+	zoom: 1;
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+}
+
+#wolf-show-meta{
+	float: left;
+	margin-right: 1%;
+	width: 32%;
+	
+	.entry-thumbnail{
+		margin-bottom: 1rem;
+	}
+	
+	img{
+		max-width: 100%;
+	}
+
+
+	.wolf-single-show-date{
+		font-size: 24px;
+		font-weight: 700;
+	}
+
+	.wolf-custom-show-date{
+
+		zoom: 1;
+		&:before, &:after { content: ""; display: table; }
+		&:after { clear: both; }
+		
+		.wolf-show-day, .wolf-show-month, .wolf-show-year{
+			display: inline;
+			font-size: 24px;
+		}
+	}
+}
+
+
+#wolf-show-content{
+	float: right;
+	margin-left: 1%;
+	width: 66%;
+	margin-bottom: 3rem;
+	
+	iframe{
+		max-width: 100%;
+	}
+}
+
+#wolf-show-details{
+	margin-bottom: 1rem;
+	
+	.wolf-show-details-title{
+		margin-top: 0;
+
+	}
+}
+
+.wolf-show-place{
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+/* Widget */
+.widget_upcoming_shows{
+	.wolf-show-year{
+		display: none;
+	}
+
+	.wolf-show-ticket-text{
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+
+	.wolf-show-date{
+		width: 50px;
+	}
+
+	table{
+
+		border-collapse: collapse;
+    		border-spacing: 0;
+    		border:none;
+
+		tr td{
+			padding-top: 10px;
+			padding-bottom: 15px;
+			vertical-align: middle;
+			border-left: none;
+			border-right: none;
+
+			&.wolf-show-infos{
+				line-height: 1.5;
+			}
+		}
+	}
+
+	
+}
+
+.wolf-show-mobile-show{
+	display: none;
+}
+
+@media screen and (max-width: 1030px) {
+	.wolf-show-mobile-show{
+		display: block;
+	}
+
+	.wolf-show-mobile-hide{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 799px) {
+	#wolf-show-meta,
+	#wolf-show-content{
+		zoom: 1;
+		&:before, &:after { content: ""; display: table; }
+		&:after { clear: both; }
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	.wolf-show-icons,
+	.wolf-show-entry-link:before{
+		display: none;
+	}
+}
+

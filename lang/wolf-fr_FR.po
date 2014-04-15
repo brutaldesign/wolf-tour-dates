@@ -1,0 +1,463 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Wolf Tour Dates\n"
+"POT-Creation-Date: 2014-03-13 19:41+0100\n"
+"PO-Revision-Date: 2014-03-13 19:42+0100\n"
+"Last-Translator: WpWolf <help@wpwolf.com>\n"
+"Language-Team: wpwolf.com <support@wpwolf.com>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-KeywordsList: __;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../classes/class-widget-upcoming-shows.php:25
+#: ../pack/wolf-tour-dates/classes/class-widget-upcoming-shows.php:25
+msgid "Display your upcoming shows"
+msgstr "Afficher les concerts à venir"
+
+#: ../classes/class-widget-upcoming-shows.php:28
+#: ../classes/class-widget-upcoming-shows.php:84 ../includes/functions.php:81
+#: ../pack/wolf-tour-dates/classes/class-widget-upcoming-shows.php:28
+#: ../pack/wolf-tour-dates/classes/class-widget-upcoming-shows.php:84
+#: ../pack/wolf-tour-dates/includes/functions.php:81
+msgid "Upcoming Shows"
+msgstr "Concerts à venir"
+
+#: ../classes/class-widget-upcoming-shows.php:92
+#: ../pack/wolf-tour-dates/classes/class-widget-upcoming-shows.php:92
+msgid "Title"
+msgstr ""
+
+#: ../classes/class-widget-upcoming-shows.php:96
+#: ../pack/wolf-tour-dates/classes/class-widget-upcoming-shows.php:96
+msgid "Optional Text"
+msgstr "Text Optionel"
+
+#: ../classes/class-widget-upcoming-shows.php:100
+#: ../pack/wolf-tour-dates/classes/class-widget-upcoming-shows.php:100
+msgid "Count"
+msgstr ""
+
+#: ../classes/class-widget-upcoming-shows.php:104
+#: ../pack/wolf-tour-dates/classes/class-widget-upcoming-shows.php:104
+msgid "Shows page URL"
+msgstr ""
+
+#: ../includes/functions.php:100
+#: ../pack/wolf-tour-dates/includes/functions.php:100
+msgid "Past Shows"
+msgstr "Concerts passés"
+
+#: ../pack/wolf-tour-dates/templates/single-show.php:59
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:984
+#: ../templates/single-show.php:59 ../wolf-tour-dates.php:984
+#, php-format
+msgid "Buy ticket - %s"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/templates/single-show.php:59
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:984
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:1207
+#: ../templates/single-show.php:59 ../wolf-tour-dates.php:984
+#: ../wolf-tour-dates.php:1207
+msgid "Buy ticket"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/templates/single-show.php:91
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:451
+#: ../templates/single-show.php:91 ../wolf-tour-dates.php:451
+msgid "Free"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/templates/single-show.php:95
+#: ../templates/single-show.php:95
+msgid "Sold Out !"
+msgstr "Complet !"
+
+#: ../pack/wolf-tour-dates/templates/single-show.php:99
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:463
+#: ../templates/single-show.php:99 ../wolf-tour-dates.php:463
+msgid "Cancelled"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/templates/single-show.php:105
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:1046
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:1135
+#: ../templates/single-show.php:105 ../wolf-tour-dates.php:1046
+#: ../wolf-tour-dates.php:1135
+msgid "View the facebook event page"
+msgstr "Voir la page facebook de l'évènement"
+
+#: ../pack/wolf-tour-dates/templates/single-show.php:122
+#: ../templates/single-show.php:122
+msgid "Details"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/templates/single-show.php:125
+#: ../templates/single-show.php:125
+#, php-format
+msgid "<strong>Time</strong> : %s"
+msgstr "<strong>Horaires</strong> : %s"
+
+#: ../pack/wolf-tour-dates/templates/single-show.php:129
+#: ../templates/single-show.php:129
+#, php-format
+msgid "<strong>Venue</strong> : %s"
+msgstr "<strong>Lieu</strong> : %s"
+
+#: ../pack/wolf-tour-dates/templates/single-show.php:133
+#: ../templates/single-show.php:133
+#, php-format
+msgid "<strong>Address</strong> : %s"
+msgstr "<strong>Addresse</strong> : %s"
+
+#: ../pack/wolf-tour-dates/templates/single-show.php:137
+#: ../templates/single-show.php:137
+#, php-format
+msgid "<strong>State</strong> : %s"
+msgstr "<strong>Région</strong> : %s"
+
+#: ../pack/wolf-tour-dates/templates/single-show.php:141
+#: ../templates/single-show.php:141
+#, php-format
+msgid "<strong>Zip</strong> : %s"
+msgstr "<strong>Code Postal</strong> : %s"
+
+#: ../pack/wolf-tour-dates/templates/single-show.php:145
+#: ../templates/single-show.php:145
+#, php-format
+msgid "<strong>Phone</strong> : %s"
+msgstr "<strong>Téléphone</strong> : %s"
+
+#: ../pack/wolf-tour-dates/templates/single-show.php:149
+#: ../templates/single-show.php:149
+#, php-format
+msgid "<strong>Contact Email</strong> : %s"
+msgstr "<strong>Email de Contact</strong> : %s"
+
+#: ../pack/wolf-tour-dates/templates/single-show.php:153
+#: ../templates/single-show.php:153
+#, php-format
+msgid "<strong>Contact Website</strong> : %s"
+msgstr "<strong>Site Web de Contact</strong> : %s"
+
+#: ../pack/wolf-tour-dates/templates/single-show.php:167
+#: ../templates/single-show.php:167
+msgid "Edit"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:288 ../wolf-tour-dates.php:288
+msgid "Shows"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:289 ../wolf-tour-dates.php:289
+msgid "Show"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:290 ../wolf-tour-dates.php:290
+msgid "Add New"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:291 ../wolf-tour-dates.php:291
+msgid "Add New Show"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:292 ../wolf-tour-dates.php:292
+msgid "All Shows"
+msgstr "Toutes les Dates"
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:293 ../wolf-tour-dates.php:293
+msgid "Edit Show"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:294 ../wolf-tour-dates.php:294
+msgid "New Show"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:295 ../wolf-tour-dates.php:295
+msgid "View Show"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:296 ../wolf-tour-dates.php:296
+msgid "Search Shows"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:297 ../wolf-tour-dates.php:297
+msgid "No shows found"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:298 ../wolf-tour-dates.php:298
+msgid "No shows found in Trash"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:300 ../wolf-tour-dates.php:300
+msgid "Tour Dates"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:332 ../wolf-tour-dates.php:332
+msgid "Options"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:342 ../wolf-tour-dates.php:342
+msgid "Show Details"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:347 ../wolf-tour-dates.php:347
+msgid "Artist (leave this field empty if it's always the same artist"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:353 ../wolf-tour-dates.php:353
+msgid "Date"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:359 ../wolf-tour-dates.php:359
+msgid "City"
+msgstr "Ville"
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:365 ../wolf-tour-dates.php:365
+msgid "Time"
+msgstr "Horaires"
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:371 ../wolf-tour-dates.php:371
+msgid "Country"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:377 ../wolf-tour-dates.php:377
+msgid "Country - short ( e.g : GER for Germany )"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:383 ../wolf-tour-dates.php:383
+msgid "State"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:389
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:487 ../wolf-tour-dates.php:389
+#: ../wolf-tour-dates.php:487
+msgid "Venue"
+msgstr "Lieu"
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:395 ../wolf-tour-dates.php:395
+msgid "Address"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:401 ../wolf-tour-dates.php:401
+msgid "Zip"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:408 ../wolf-tour-dates.php:408
+msgid "Phone"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:414 ../wolf-tour-dates.php:414
+msgid "Contact Email"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:419 ../wolf-tour-dates.php:419
+msgid "Contact Website"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:425 ../wolf-tour-dates.php:425
+msgid "Google map"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:426 ../wolf-tour-dates.php:426
+#, php-format
+msgid "<a href=\"%s\" target=\"_blank\">Where to find it?</a>"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:432 ../wolf-tour-dates.php:432
+msgid "Facebook event page"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:438 ../wolf-tour-dates.php:438
+msgid "Buy Ticket link"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:445 ../wolf-tour-dates.php:445
+msgid "Price (e.g : $15)"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:457 ../wolf-tour-dates.php:457
+msgid "Sold Out"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:485 ../wolf-tour-dates.php:485
+msgid "Show Date"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:486 ../wolf-tour-dates.php:486
+msgid "Place"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:488 ../wolf-tour-dates.php:488
+msgid "Status"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:503 ../wolf-tour-dates.php:503
+#, fuzzy
+msgid "upcoming"
+msgstr "Concerts à venir"
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:507 ../wolf-tour-dates.php:507
+msgid "past"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:511
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:994
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:1218 ../wolf-tour-dates.php:511
+#: ../wolf-tour-dates.php:994 ../wolf-tour-dates.php:1218
+msgid "cancelled"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:515 ../wolf-tour-dates.php:515
+#, fuzzy
+msgid "sold out"
+msgstr "complet !"
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:605 ../wolf-tour-dates.php:605
+msgid "Date Format in shows table"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:606 ../wolf-tour-dates.php:606
+msgid "Display Past Shows"
+msgstr "Afficher les concerts passés"
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:607 ../wolf-tour-dates.php:607
+msgid "Link to single page"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:608 ../wolf-tour-dates.php:608
+msgid "Instructions"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:648 ../wolf-tour-dates.php:648
+msgid "Date Format"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:651 ../wolf-tour-dates.php:651
+msgid "Custom Style"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:673 ../wolf-tour-dates.php:673
+msgid "Documentation on date and time formatting"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:704 ../wolf-tour-dates.php:704
+msgid ""
+"To display your tour dates list, paste the following shortcode in a post or "
+"page :"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:706 ../wolf-tour-dates.php:706
+msgid "Additionally, you can add some attributes."
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:708 ../wolf-tour-dates.php:708
+msgid "The \"past\" attribute: display the past shows or not."
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:709 ../wolf-tour-dates.php:709
+msgid "The \"link\" attribute: link your shows to the single page or not."
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:720 ../wolf-tour-dates.php:720
+msgid "Tour Dates Options"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:723 ../wolf-tour-dates.php:723
+msgid "Settings saved."
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:729 ../wolf-tour-dates.php:729
+msgid "Save Changes"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:792 ../wolf-tour-dates.php:792
+msgid "Jan"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:792 ../wolf-tour-dates.php:792
+msgid "Feb"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:792 ../wolf-tour-dates.php:792
+msgid "Mar"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:792 ../wolf-tour-dates.php:792
+msgid "Apr"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:792 ../wolf-tour-dates.php:792
+msgid "May"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:792 ../wolf-tour-dates.php:792
+msgid "Jun"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:792 ../wolf-tour-dates.php:792
+msgid "Jul"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:792 ../wolf-tour-dates.php:792
+msgid "Aug"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:792 ../wolf-tour-dates.php:792
+msgid "Sep"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:792 ../wolf-tour-dates.php:792
+msgid "Oct"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:792 ../wolf-tour-dates.php:792
+msgid "Nov"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:792 ../wolf-tour-dates.php:792
+msgid "Dec"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:999
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:1223 ../wolf-tour-dates.php:999
+#: ../wolf-tour-dates.php:1223
+msgid "sold out!"
+msgstr "complet !"
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:1004
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:1228
+#: ../wolf-tour-dates.php:1004 ../wolf-tour-dates.php:1228
+msgid "free"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:1034
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:1123
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:1253
+#: ../wolf-tour-dates.php:1034 ../wolf-tour-dates.php:1123
+#: ../wolf-tour-dates.php:1253
+msgid "View details"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:1050
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:1139
+#: ../wolf-tour-dates.php:1050 ../wolf-tour-dates.php:1139
+msgid "View flyer"
+msgstr ""
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:1065
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:1278
+#: ../wolf-tour-dates.php:1065 ../wolf-tour-dates.php:1278
+msgid "No upcoming shows scheduled."
+msgstr "Pas de dates prévues"
+
+#: ../pack/wolf-tour-dates/wolf-tour-dates.php:1274
+#: ../wolf-tour-dates.php:1274
+msgid "View more dates"
+msgstr "Voir plus de dates"
