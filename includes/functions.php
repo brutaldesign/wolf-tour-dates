@@ -65,40 +65,38 @@ if ( ! function_exists( 'wolf_get_shows_thumbnail_url' ) ) {
 	}
 }
 
-if ( ! function_exists( 'wolf_tour_dates_output_upcoming_shows_title' ) ) {
+if ( ! function_exists( 'wolf_tour_dates_google_map_meta_hook' ) ) {
 	/**
-	 * Output "Upcoming Shows" before the tour date list
+	 * Output google map
 	 *
-	 * It can be overwritten in a theme
+	 * Check the old URL and output an iframe or output the new iframe code directly
 	 *
-	 * @param string $before
-	 * @param string $after
-	 * @return string
+	 * @param string|array $metadata - Always null for post metadata.
+	 * @param int $object_id - Post ID for post metadata
+	 * @param string $meta_key - metadata key.
+	 * @param bool $single - Indicates if processing only a single $metadata value or array of values.
+	 * @return Original or Modified $metadata.
 	 */
-	function wolf_tour_dates_output_upcoming_shows_title( $before = '', $after = '' ) {
+	function wolf_tour_dates_google_map_meta_hook( $metadata, $object_id, $meta_key, $single ) {
+		
+		if ( '_wolf_show_map' == $meta_key ) {
+			
+			$cache = wp_cache_get( $object_id, 'post_meta'); // get meta values
 
-		echo wp_kses_post( $before );
-		_e( 'Upcoming Shows', 'wolf' );
-		echo wp_kses_post( $after );
+			if ( $cache && isset( $cache[ $meta_key ] ) && isset( $cache[ $meta_key ][0] ) ) {
+				
+				$metadata = $cache[ $meta_key ][0];
 
+				// get the src value if value is an embed code
+				if ( preg_match( '/src="([^"]*)"/i', $metadata, $match ) ) {
+					if ( $match && isset( $match[1] ) ) {
+						$metadata = str_replace( '&amp;output=embed', '', $match[1] );
+					}
+				}
+			}
+		}
+		
+		return $metadata;
 	}
-}
-
-if ( ! function_exists( 'wolf_tour_dates_output_past_shows_title' ) ) {
-	/**
-	 * Output "Past Shows" before the tour date list
-	 *
-	 * It can be overwritten in a theme
-	 *
-	 * @param string $before
-	 * @param string $after
-	 * @return string
-	 */
-	function wolf_tour_dates_output_past_shows_title( $before = '', $after = '' ) {
-
-		echo wp_kses_post( $before );
-		_e( 'Past Shows', 'wolf' );
-		echo wp_kses_post( $after );
-
-	}
+	add_filter( 'get_post_metadata', 'wolf_tour_dates_google_map_meta_hook', true, 4 );
 }

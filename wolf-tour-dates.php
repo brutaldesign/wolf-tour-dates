@@ -3,7 +3,7 @@
  * Plugin Name: Wolf Tour Dates
  * Plugin URI: http://wpwolf.com/plugin/wolf-tour-dates
  * Description: A plugin to manage your tour dates
- * Version: 1.0.9
+ * Version: 1.1.0
  * Author: WpWolf
  * Author URI: http://wpwolf.com
  * Requires at least: 3.5
@@ -41,7 +41,7 @@ if ( ! class_exists( 'Wolf_Tour_Dates' ) ) {
 	 *
 	 * Contains the main functions for Wolf_Tour_Dates
 	 *
-	 * @version 1.0.9
+	 * @version 1.1.0
 	 * @since 1.0.0
 	 * @package WolfTourDates
 	 * @author WpWolf
@@ -51,7 +51,7 @@ if ( ! class_exists( 'Wolf_Tour_Dates' ) ) {
 		/**
 		 * @var string
 		 */
-		private $version = '1.0.9';
+		private $version = '1.1.0';
 
 		/**
 		 * @var string
@@ -86,8 +86,8 @@ if ( ! class_exists( 'Wolf_Tour_Dates' ) ) {
 			global $wpdb;
 			$this->wpdb = &$wpdb;
 
-			define( 'WOLF_TOUR_DATES_VERSION', $this->plugin_url );
-			define( 'WOLF_TOUR_DATES_URL', $this->plugin_url );
+			define( 'WOLF_TOUR_DATES_VERSION', $this->plugin_url() );
+			define( 'WOLF_TOUR_DATES_URL', $this->plugin_url() );
 			
 			// Flush rewrite rules on activation
 			register_activation_hook( __FILE__, array( $this, 'activate' ) );
@@ -117,8 +117,7 @@ if ( ! class_exists( 'Wolf_Tour_Dates' ) ) {
 			add_action( 'widgets_init', array( $this, 'register_widgets' ) );
 
 			// styles
-			add_action( 'wp_print_styles', array( $this, 'print_styles' ) );
-		
+			add_action( 'wp_enqueue_scripts', array( $this, 'print_styles' ) );
 		}
 
 		/**
@@ -235,7 +234,6 @@ if ( ! class_exists( 'Wolf_Tour_Dates' ) ) {
 			$locale = apply_filters( 'wolf', get_locale(), $domain );
 			load_textdomain( $domain, WP_LANG_DIR.'/'.$domain.'/'.$domain.'-'.$locale.'.mo' );
 			load_plugin_textdomain( $domain, FALSE, dirname( plugin_basename( __FILE__ ) ) . '/lang/' );
-
 		}
 
 		/**
@@ -320,7 +318,6 @@ if ( ! class_exists( 'Wolf_Tour_Dates' ) ) {
 			);
 
 			register_post_type( 'show', $args );
-
 		}
 
 		/**
@@ -422,10 +419,10 @@ if ( ! class_exists( 'Wolf_Tour_Dates' ) ) {
 						),
 
 						array(
-							'label'	=> __( 'Google map', 'wolf' ),
-							'desc'   => sprintf( __( '<a href="%s" target="_blank">Where to find it?</a>', 'wolf' ), 'http://media.wpwolf.com/screenshots/googlemap-src.jpg' ),
+							'label'	=> __( 'Google map embed code', 'wolf' ),
+							'desc'   => sprintf( __( '<a href="%s" target="_blank">Where to find it?</a>', 'wolf' ), $this->plugin_url() . '/assets/admin/img/google-map.jpg' ),
 							'id'	=> '_wolf_show_map',
-							'type'	=> 'url',
+							'type'	=> 'textarea',
 						),
 
 						array(
@@ -777,7 +774,6 @@ if ( ! class_exists( 'Wolf_Tour_Dates' ) ) {
 
 				return $interval > 0;
 			}
-			
 		}
 
 		/**
@@ -946,7 +942,9 @@ if ( ! class_exists( 'Wolf_Tour_Dates' ) ) {
 
 				if ( $display_past_show ) {
 
-					wolf_tour_dates_output_upcoming_shows_title( '<h2>', '</h2>' );
+					echo '<h2>';
+					_e( 'Upcoming Shows', 'wolf' );
+					echo '</h2>';
 
 				}
 				
@@ -1063,7 +1061,6 @@ if ( ! class_exists( 'Wolf_Tour_Dates' ) ) {
 			else :
 				
 				?><p><?php _e( 'No upcoming shows scheduled.', 'wolf' ); ?></p><?php
-
 			
 			endif; 
 			wp_reset_postdata();
@@ -1071,7 +1068,9 @@ if ( ! class_exists( 'Wolf_Tour_Dates' ) ) {
 
 			if ( $past_shows->have_posts() && $display_past_show ) :
 				
-				wolf_tour_dates_output_past_shows_title( '<h2>', '</h2>' );
+				echo '<h2>';
+				_e( 'Past Shows', 'wolf' );
+				echo '</h2>';
 
 				echo '<table class="wolf-past-shows wolf-shows">';
 				while ( $past_shows->have_posts() ) : $past_shows->the_post();

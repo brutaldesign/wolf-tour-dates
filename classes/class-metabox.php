@@ -24,7 +24,7 @@ if ( ! class_exists( 'Wolf_Tour_Dates_Metabox' ) ) {
 
 			$this->meta = $meta + $this->meta;
 			add_action( 'add_meta_boxes', array( $this, 'add_meta_boxes' ) );
-			add_action( 'admin_print_styles', array( $this, 'admin_styles' ) );
+			add_action( 'admin_enqueue_scripts', array( $this, 'admin_styles' ) );
 			add_action( 'admin_enqueue_scripts', array( $this, 'admin_scripts' ) );
 			add_action( 'save_post', array( $this, 'save' ) );
 		}
@@ -68,8 +68,7 @@ if ( ! class_exists( 'Wolf_Tour_Dates_Metabox' ) ) {
 		 */
 		public function admin_scripts() {
 
-			wp_enqueue_script( 'wolf-tour-dates-datepicker', WOLF_TOUR_DATES_URL . '/assets/admin/js/datepicker.min.js', array( 'jquery-ui-datepicker' ), false, true );
-						
+			wp_enqueue_script( 'wolf-tour-dates-datepicker', WOLF_TOUR_DATES_URL . '/assets/admin/js/datepicker.min.js', array( 'jquery-ui-datepicker' ), false, true );		
 		}
 
 		/**
@@ -79,7 +78,6 @@ if ( ! class_exists( 'Wolf_Tour_Dates_Metabox' ) ) {
 			
 			/* Datepicker CSS */
 			wp_enqueue_style( 'jquery-ui-custom', WOLF_TOUR_DATES_URL . '/assets/admin/css/jquery-ui-custom.min.css', array(), WOLF_TOUR_DATES_VERSION, 'all' );
-
 		}
 
 		/**
